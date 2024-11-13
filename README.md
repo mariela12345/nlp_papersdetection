@@ -4,11 +4,11 @@
 3. The trained models are uploaded in this same report
 
 # Task1
-1. Run first the preprocessing steps: \\
-2. Execute the similarity functions for filter out the articles that do not employ deep learning techniques: \\
-2.1. First approach () obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3
-2.2. Second approach () obtain articles that use only deep learning using cosine similarity but instead of threshold ranking them from high to low similarity scores and filter only 25% of the entire data
-3. Plotting the keywords related to deep learning (bar plots) of both approaches to show the DL techniques employed in the selected articles
+#1. Run first the preprocessing steps: 
+#2. Execute the similarity functions for filter out the articles that do not employ deep learning techniques: 
+#2.1. First approach () obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3
+#2.2. Second approach () obtain articles that use only deep learning using cosine similarity but instead of threshold ranking them from high to low similarity scores and filter only 25% of the entire data
+#3. Plotting the keywords related to deep learning (bar plots) of both approaches to show the DL techniques employed in the selected articles
 
 # Task2
 1. Performing classification of articles to classify them in text mining, computer vision, both approaches or others.
