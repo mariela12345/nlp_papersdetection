@@ -32,6 +32,7 @@
 
 
 # Task2
+## Trained DistilBERT available on: https://drive.google.com/drive/folders/1O63E5c57KBtX7tuPFea-uD0tXLRjLZxc?usp=sharing
 ## Instructions and guidelines
 1. Performing classification of articles to classify them in text mining, computer vision, both approaches or others.<br/>
 2. An initial labeling of data was done (automatic labeling) - run function suggested <br/>
