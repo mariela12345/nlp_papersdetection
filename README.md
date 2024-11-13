@@ -36,9 +36,9 @@
 4.3 Unzip the trained model (run function) and run an inference to test the classification performance from a set of samples : run function <br/>
 4.4. Test model performance using the metrics and plots: run function ... , run function ...<br/>
 ## Solution components
-- Component 1: Initial automatic labeling which is a label process based on keywords related to text mining, computer vision, both approaches keywords including multimodal & crossmodal techniques, others (generative ai, llms, etc)
-- Component First approach: A SMOTE method to tackle imbalance (augmented more data of less privileged class - both),balanced data after SMOTE,a logistic regression model for classify categories (training & evaluation), reports/metrics
-- Component Second approach: Balanced data with SMOTE method, A DistiBERT model trained with the labeled dataset (train and evaluation), a trained DistilBERT method for inference of sample for online classification, metrics and charts
+- Initial automatic labeling which is a label process based on keywords related to text mining, computer vision, both approaches keywords including multimodal & crossmodal techniques, others (generative ai, llms, etc)
+- Component first approach: A SMOTE method to tackle imbalance (augmented more data of less privileged class - both),balanced data after SMOTE,a logistic regression model for classify categories (training & evaluation), reports/metrics
+- Component second approach: Balanced data with SMOTE method, A DistiBERT model trained with the labeled dataset (train and evaluation), a trained DistilBERT method for inference of sample for online classification, metrics and charts
 
 # Task3
 ## Instructions and guidelines
@@ -46,11 +46,15 @@
 3. For getting the related topics after classification task : run function <br/>
 4. For getting the plots of related topics : run function <br/>
 ## Solution components
-- Components: 
+- Component 1: A matching method to identfy the subtopics of each relevant articles that use deep learning techniques: vectorization of text and apply cosine similarity to find the subtopics/methods after clasiffication
+- Component 2: Bar charts that highlighted the top subtopics by each classified label (text mining, computer vision, both and others) and a global bar chart of all classified articles.
 
 # Q & A
 1. Which NLP tecniques for filtering papers were used?
-   
+   - Stem-BERT for sentences embeddings along with cosine similarity and max value of those/top ranking ones that match the articles following DL methods
 3. Why is more effective than keywords-based filtering? (pros)
-4. What are the resultant dataset statistics for task1 and task2
+   - Using a model made for embeddings is capable to capture more smiliraties than simple filtering due to vectorize representations can capture more accurate similarities in meaning with reference DL techniques
+5. What are the resultant dataset statistics for task1 and task2
+   - Statistics for task 1: similarity scores after cosine similarities and max values/top ranking values also visual statistics as bar charts
+   - Statistics for task 2: After training the DistilBERT/Logistic regression to measure performance using accuracy, precision, recall, f1 score and confusion matrices. For SMOTE method: resultant amount of balance data per class/label.
    
