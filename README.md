@@ -1,17 +1,29 @@
-# nlp_papersdetection
+# NLP papers detection for virology/epidemiology
 1. Clone the repository
 2. Execute code from the notebook
 3. The trained models are uploaded in this same report
 
+# Preprocessing   
+1. Run first the preprocessing steps with functions a, b, c in that order <br/>
+- The aim was stemming and lemmatization of the text fields (stop words removal, lowercasing, etc) - Abstract, Title, Journal/Book, First Author 
+- In "Abstract" some empty values are replaced by unknown
+- For other fields (non text) cleaning to put in a specific format/removing some
+- Removing DOI, PMCID, NIHMS ID because does not seem relevant and adding noise based of null numbers computation
+- Citation in specific format (volume (issue):pagination)
+
+# Feature Engineering
+2. Run feature engineering steps with functions n, m, z in that order <br/>
+- Create the "text" field merging the Title with Abstract to have all the descriptive information of each paper in one single field
+-  Some others features as splitting dates in more than one field. For example created date into created year, create month, created day (not mandatory but could be useful for evaluate trends/seasonality in data, etc)
+   
 # Task1
 ## Instructions and guidelines
-1. Run first the preprocessing steps with functions a, b, c in that order <br/>
-2. Execute the similarity functions for filter out the articles that do not employ deep learning techniques: run functions e ,f, g in that order (first approach) or function  k, l, m (second approach) <br/>
-2.1. First approach (functions ...) obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3 
+1. Execute the similarity functions for filter out the articles that do not employ deep learning techniques: run functions e ,f, g in that order (first approach) or function  k, l, m (second approach) <br/>
+1.1. First approach (functions ...) obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3 
 - Run function () <br/>
-2.2. Second approach () obtain articles that use only deep learning using cosine similarity but instead of threshold ranking them from high to low similarity scores and filter only 25% of the entire data 
+1.2. Second approach () obtain articles that use only deep learning using cosine similarity but instead of threshold ranking them from high to low similarity scores and filter only 25% of the entire data 
 - Run function () <br/>
-3. Plotting the keywords related to deep learning (bar plots) of both approaches to show the DL techniques employed in the selected articles
+2. Plotting the keywords related to deep learning (bar plots) of both approaches to show the DL techniques employed in the selected articles
 - Run function () <br/>
 ## Solution components
 - First approach: Stem-BERT model (Mini-) for embedding sentences and compare with reference words/sentences related to deep learning techniques,cosine similarity and maximum value of cosine computation per article
