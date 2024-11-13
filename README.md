@@ -5,17 +5,20 @@
 
 # Task1
 ## Instructions and guidelines
-1. Run first the preprocessing steps: <br/>
-2. Execute the similarity functions for filter out the articles that do not employ deep learning techniques: <br/>
-2.1. First approach () obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3 
+1. Run first the preprocessing steps with functions a, b, c in that order <br/>
+2. Execute the similarity functions for filter out the articles that do not employ deep learning techniques: run functions e ,f, g in that order (first approach) or function  k, l, m (second approach) <br/>
+2.1. First approach (functions ...) obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3 
 - Run function () <br/>
 2.2. Second approach () obtain articles that use only deep learning using cosine similarity but instead of threshold ranking them from high to low similarity scores and filter only 25% of the entire data 
 - Run function () <br/>
 3. Plotting the keywords related to deep learning (bar plots) of both approaches to show the DL techniques employed in the selected articles
 - Run function () <br/>
 ## Solution components
-- Component 1:
-- Component 2:
+- First approach: Stem-BERT model (Mini-) for embedding sentences and compare with reference words/sentences related to deep learning techniques,cosine similarity and maximum value of cosine computation per article
+- Second approach: Using the same sentence embedding model (stem-BERT type), comparing also with deep learning methods words/sentences, after cosine similarity a ranking of the top articles that match (25% whole data) 
+## Notes
+- Second approach seems better obtaining a more number of articles that might follow deep learning techniques. A fast checking looking into the bar charts, second approach captures more deep learning keywords/articles.
+- First approach capture less number of articles which does not seem that accurate comparing to the whole dataset.
 
 
 # Task2
@@ -33,8 +36,9 @@
 4.3 Unzip the trained model (run function) and run an inference to test the classification performance from a set of samples : run function <br/>
 4.4. Test model performance using the metrics and plots: run function ... , run function ...<br/>
 ## Solution components
-- Component 1:
-- Component 2:
+- Component 1: Initial automatic labeling which is a label process based on keywords related to text mining, computer vision, both approaches keywords including multimodal & crossmodal techniques, others (generative ai, llms, etc)
+- Component First approach: A SMOTE method to tackle imbalance (augmented more data of less privileged class - both),balanced data after SMOTE,a logistic regression model for classify categories (training & evaluation), reports/metrics
+- Component Second approach: Balanced data with SMOTE method, A DistiBERT model trained with the labeled dataset (train and evaluation), a trained DistilBERT method for inference of sample for online classification, metrics and charts
 
 # Task3
 ## Instructions and guidelines
@@ -42,7 +46,7 @@
 3. For getting the related topics after classification task : run function <br/>
 4. For getting the plots of related topics : run function <br/>
 ## Solution components
-- Components:
+- Components: 
 
 # Q & A
 1. Which NLP tecniques for filtering papers were used?
