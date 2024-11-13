@@ -39,7 +39,7 @@
 3.1. A logistic regression method was employed to perform classification that get the "predicted category" - run function <br/>
 3.2. Since the labeled data is imbalanced (both (less privileged), others, text ming, computer vision) then SMOTE is applied to augmented the number of "both" labels: run function <br/>
 3.3. Once again after SMOTE to tackling imbalance is performed then logistic regression is applied once again reaching: acc:87,prec: ,f1, etc : run function suggested <br/>
-3.4 Plots of performance : run <br/>
+3.4 Plots of performance : run functions suggested <br/>
 4. Second approach:<br/>
 4.1. A DistilBERT language model was used (it is less resource comsuption compared to a bigger model BERT) <br/>
 4.2. DistilBERT was trained with the labeled dataset achieving 97% acc, pre , f1, recall, (better performance), the already trained model uploaded in repo <br/>
