@@ -19,8 +19,8 @@
 # Task1
 ## Instructions and guidelines
 1. Execute the similarity functions for filter out the articles that do not employ deep learning techniques: run functions suggested in notebook <br/>
-1.1. First approach obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3 : run functions suggsted 
-1.2. Second approach () obtain articles that use only deep learning using cosine similarity but instead of threshold ranking them from high to low similarity scores and filter only 25% of the entire data: run functions suggested
+1.1. First approach obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3 : run functions suggsted  <br/>
+1.2. Second approach () obtain articles that use only deep learning using cosine similarity but instead of threshold ranking them from high to low similarity scores and filter only 25% of the entire data: run functions suggested <br/>
 2. Plotting the keywords related to deep learning (bar plots) of both approaches to show the DL techniques employed in the selected articles
    
 ## Solution components
