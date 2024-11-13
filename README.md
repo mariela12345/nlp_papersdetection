@@ -4,6 +4,7 @@
 3. The trained models are uploaded in this same report
 
 # Task1
+## Instructions and guidelines
 1. Run first the preprocessing steps: <br/>
 2. Execute the similarity functions for filter out the articles that do not employ deep learning techniques: <br/>
 2.1. First approach () obtain the articles that only use deep learning using cosine similarity, obtaining the max value per article and getting the articles with a similarity score threshold of 0.3 
@@ -12,8 +13,13 @@
 - Run function () <br/>
 3. Plotting the keywords related to deep learning (bar plots) of both approaches to show the DL techniques employed in the selected articles
 - Run function () <br/>
+## Solution components
+- Component 1:
+- Component 2:
+
 
 # Task2
+## Instructions and guidelines
 1. Performing classification of articles to classify them in text mining, computer vision, both approaches or others.<br/>
 2. An initial labeling of data was done (automatic labeling) - run function <br/>
 3. First approach: <br/>
@@ -26,8 +32,21 @@
 4.2. DistilBERT was trained with the labeled dataset achieving 97% acc, pre , f1, recall, (better performance), the already trained model uploaded in repo : ...zip <br/>
 4.3 Unzip the trained model (run function) and run an inference to test the classification performance from a set of samples : run function <br/>
 4.4. Test model performance using the metrics and plots: run function ... , run function ...<br/>
-   
+## Solution components
+- Component 1:
+- Component 2:
+
 # Task3
+## Instructions and guidelines
 1. Report of the used approaches in task2 classification : a matching ..... <br/>
 3. For getting the related topics after classification task : run function <br/>
 4. For getting the plots of related topics : run function <br/>
+## Solution components
+- Components:
+
+# Q & A
+1. Which NLP tecniques for filtering papers were used?
+   
+3. Why is more effective than keywords-based filtering? (pros)
+4. What are the resultant dataset statistics for task1 and task2
+   
